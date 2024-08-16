@@ -22,8 +22,8 @@ km = tk.Label(text='Km')
 km.grid(column=2, row=1)
 
 def calculate():
-  miles = int(input.get())
-  km = miles * 1.60934
+  miles = float(input.get())
+  km = round(miles * 1.60934)
   result.config(text=km)
 
 button = tk.Button(text='Calculate', command=calculate)
